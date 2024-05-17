@@ -1,0 +1,35 @@
+DeepSound v1.3.4 Update Documentation
+
+Note:
+
+This update is just for who is using v1.3.3, if you are using old versions, please update version per version without skipping any updates.
+
+// ------------------------------------- //
+
+1) How To Update
+
+- BACKUP, BACKUP, AND BACKUP everything, files, DATABASE.
+
+- Upload "update.php" file located on "Update Guide/v1.3.4" folder to your server.
+
+- Upload and overwrite ALL files/folders (SELECT ALL) file(s) located inside "Update Guide/v1.3.4/Script/" folder to your server, if you have renamed your theme, please open "Update Guide/v1.3.4/Script/themes/default/" and upload & overwrite ALL files/folders to your theme folder.
+
+- Once the files are uploaded, open and run http://www.YOURSITE.COM/update.php
+
+- Note: Don't run "update.php" file till all the files are uploaded.
+
+- Refresh your page, Done !
+
+- For more information, please read our FAQ http://docs.deepsoundscript.com/#faq
+
+// ------------------------------------- //
+
+if you're facing any problems, please contact me so i can help.
+
+Created: 08/04/2019
+Last Update: 04/21/2021
+By: Deen Doughouz (DoughouzForest)
+Email: wowondersocial@gmail.com
+Website: https://deepsoundscript.com
+
+Copyright © 2021 DeepSound All rights reserved

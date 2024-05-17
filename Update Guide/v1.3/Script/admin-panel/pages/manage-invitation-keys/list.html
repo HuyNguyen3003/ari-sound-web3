@@ -1,0 +1,15 @@
+<tr class="setting-invitation" data-invitation="<?php echo $data['id']; ?>">
+  <td >
+     <?php echo Time_Elapsed_String($data['posted']); ?>
+  </td>
+  <td>
+     <?php echo $data['code']; ?>
+  </td>
+  <td>
+      <?php echo $data['status']; ?>
+  </td>
+  <td>
+     <button class="btn btn-info waves-effect copy-invitation-url" id="<?php echo $data['id']; ?>_copy" data-link="<?php echo $data['url']; ?>">COPY LINK</button>
+     <button class="btn btn-danger waves-effect delete-admin-invitation" id="<?php echo $data['id']; ?>">DELETE</button>
+  </td>
+</tr>

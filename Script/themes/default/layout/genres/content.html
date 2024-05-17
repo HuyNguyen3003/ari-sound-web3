@@ -1,0 +1,90 @@
+<div class="ma_page_content">
+	<div class="ma_pc_inner">
+		<div
+		id="genres-adsemse-01"
+		style="
+		  width: 970px;
+		  height: 90px;
+		  ;
+		  margin: 20px 0 20px 0px;
+		"
+	        >
+	</div>
+	    <script>
+      var hash_id = $('input[name=hash_id]').val();
+      resadsms('Genres', hash_id).then((data) => {
+        let da = {};
+        for (let item in data) {
+          if (data[item].id === 'genres-adsemse-01') {
+            da = data[item].scripts;
+            let newscripts = convertToHTML(da);
+            if (data[item].provider === 'adsterra') {
+              let extractedData = extractScriptsData(newscripts);
+              insertScripts(extractedData, 'genres-adsemse-01');
+            }
+          }
+        }
+      });
+    </script>
+	        <div style="display: flex;">
+	
+		<div class="page_padding">
+			<!-- Genres List -->
+				<div class="genre_lst">
+					<?php foreach ($music->categories as $key => $category) {?>
+					<a href="{{LINK explore-genres/<?php echo $key?>}}" data-load="explore-genres/<?php echo $key?>" class="gnr_list_item gnr_list_item<?php echo $key?>">
+						<div class="img_cnt">
+							<img src="<?php echo getMedia(getCategoryInfo($key)->background_thumb);?>" alt="category" />
+						</div>
+						<div class="name"><?php echo $category?></div>
+						<style>.genre_lst .gnr_list_item<?php echo $key?> .img_cnt:after {background: <?php echo getCategoryInfo($key)->color?>;}</style>
+					</a>
+					<?php } ?>
+				</div>
+			<!-- End Genres List -->
+		</div>
+		<div>
+        <div
+          id="genres-adsemse-02"
+          style="width: 300px;height: 600px;;margin: 0 20px 20px 20px;">
+	</div>
+	    <script>
+      var hash_id = $('input[name=hash_id]').val();
+      resadsms('Genres', hash_id).then((data) => {
+        let da = {};
+        for (let item in data) {
+          if (data[item].id === 'genres-adsemse-02') {
+            da = data[item].scripts;
+            let newscripts = convertToHTML(da);
+            if (data[item].provider === 'adsterra') {
+              let extractedData = extractScriptsData(newscripts);
+              insertScripts(extractedData, 'genres-adsemse-02');
+            }
+          }
+        }
+      });
+    </script>
+        <div
+          id="genres-adsemse-03"
+          style="width: 300px;height: 250px;;margin: 0 20px 20px 20px;">
+	</div>
+	    <script>
+      var hash_id = $('input[name=hash_id]').val();
+      resadsms('Genres', hash_id).then((data) => {
+        let da = {};
+        for (let item in data) {
+          if (data[item].id === 'genres-adsemse-03') {
+            da = data[item].scripts;
+            let newscripts = convertToHTML(da);
+            if (data[item].provider === 'adsterra') {
+              let extractedData = extractScriptsData(newscripts);
+              insertScripts(extractedData, 'genres-adsemse-03');
+            }
+          }
+        }
+      });
+    </script>
+      </div>
+	</div>
+	</div>
+</div>

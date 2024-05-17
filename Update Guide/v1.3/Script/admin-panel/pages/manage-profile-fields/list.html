@@ -1,0 +1,21 @@
+<tr class="setting-postlist" id="<?php echo $data['id'];?>">
+   <td><?php echo $data['id'];?></td>
+   <td><?php echo $data['name'];?></td>
+   <td>
+      <?php
+         if ($data['select_type'] == 'yes') {
+          echo 'Select box';
+         } else if ($data['type'] == 'textarea') {
+          echo 'Text area';
+         } else if ($data['type'] == 'textbox') {
+          echo 'Text box';
+         }
+         ?>
+   </td>
+   <td><?php echo $data['length'];?></td>
+   <td><?php echo ucfirst($data['placement']);?></td>
+   <td>
+      <a class="btn btn-info waves-effect waves-light" href="<?php echo LoadAdminLinkSettings('edit-profile-field?id=' . $data['id']); ?>">EDIT</a>
+      <button onclick="DeleteField(<?php echo $data['id'];?>);" type="button" class="btn btn-danger waves-effect waves-light">DELETE</button>
+   </td>
+</tr>

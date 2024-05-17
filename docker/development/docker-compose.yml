@@ -1,0 +1,19 @@
+services:
+
+  deepsound-dev:
+    build:
+      context: ../../
+      dockerfile: docker/Dockerfile
+    ports:
+      - 3114:80
+    networks:
+      - deepsound-net
+    volumes:
+      - deepsound-data-dev:/var/www/html/
+
+networks:
+  deepsound-net:
+
+volumes:
+  deepsound-data-dev:
+    name: deepsound-data-dev
